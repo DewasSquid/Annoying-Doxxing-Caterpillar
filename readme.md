@@ -36,5 +36,3 @@ Customize configuration settings in the `config.py` file based on your preferenc
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
-
----
