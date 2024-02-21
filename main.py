@@ -9,7 +9,7 @@ import subprocess
 class Video(tk.Toplevel):
     def __init__(self, monitor: Monitor, *args, **kwargs):
         super().__init__(
-            cursor=None,
+            cursor="none",
             *args,
             **kwargs
         )
