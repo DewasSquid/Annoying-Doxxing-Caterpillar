@@ -33,6 +33,3 @@ Customize configuration settings in the `config.py` file based on your preferenc
 - **TEXT_COMMANDS:** List of system commands to retrieve information for display.
 - **TEXT_INTERVAL:** Interval (in milliseconds) for updating the displayed text.
 - **TEXT_STEPS:** Number of characters to increment in each animation step.
-
-## License
-This project is licensed under the [MIT License](LICENSE).
