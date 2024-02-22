@@ -54,7 +54,7 @@ class Video(tk.Toplevel):
         def _animate():
             nonlocal text_index
             if text_index >= text_length:
-                self.after(3000, self.safe_exit)
+                self.after(5000, self.safe_exit)
                 return
             
             start_index = max(0, text_index - max_display_length)
