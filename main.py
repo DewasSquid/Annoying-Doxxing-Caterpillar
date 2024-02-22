@@ -4,16 +4,19 @@ from pygame import mixer
 from screeninfo import get_monitors, Monitor
 import config
 import subprocess
+import sys
 
 
 class Video(tk.Toplevel):
-    def __init__(self, monitor: Monitor, *args, **kwargs):
+    def __init__(self, monitor: Monitor, master: tk.Tk, *args, **kwargs):
         super().__init__(
             cursor="none",
             *args,
             **kwargs
         )
         self.monitor = monitor
+        self.master = master
+        
         self.setup_window()
         self.create_video_label()
         self.play_video()
@@ -54,7 +57,7 @@ class Video(tk.Toplevel):
         def _animate():
             nonlocal text_index
             if text_index >= text_length:
-                self.after(5000, self.safe_exit)
+                self.after(5000, self.master.safe_exit)
                 return
             
             start_index = max(0, text_index - max_display_length)
@@ -62,11 +65,6 @@ class Video(tk.Toplevel):
             text_index += config.TEXT_STEPS
             self.after(config.TEXT_INTERVAL, _animate)
         _animate()
-    
-    def safe_exit(self):
-        self.destroy()
-        exit(0)
-
 
 class MainWindow(tk.Tk):
     def __init__(self, *args, **kwargs):
@@ -96,6 +94,12 @@ class MainWindow(tk.Tk):
         self.music = mixer.Sound(config.MUSIC_PATH)
         self.music.set_volume(config.MUSIC_VOLUME)
         self.music.play(loops=-1)
+    
+    def safe_exit(self):
+        self.music.stop()
+        self.destroy()
+        sys.exit(0)
+
 
 if __name__ == "__main__":
     window = MainWindow()
