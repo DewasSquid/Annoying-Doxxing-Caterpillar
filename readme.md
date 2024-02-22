@@ -6,8 +6,8 @@ This aims to replicate the infamous "Doxxing Caterpillar" video on your machine.
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/krater-caterpillar.git
-   cd krater-caterpillar
+   git clone https://github.com/DewasSquid/Annoying-Doxxing-Caterpillar.git
+   cd Annoying-Doxxing-Caterpillar
    ```
 
 2. Ensure you have the required Python packages installed by running:
@@ -18,7 +18,7 @@ This aims to replicate the infamous "Doxxing Caterpillar" video on your machine.
 # Usage
 1. Run the main script:
    ```bash
-   python main.py
+   python ./source/main.py
    ```
 2. The main window will be minimized, and videos will be displayed on each connected monitor with animated system information and the legendary "Krater Caterpillar" meme.
 
