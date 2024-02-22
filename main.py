@@ -79,8 +79,8 @@ class MainWindow(tk.Tk):
         self.iconify()  # Minimize the window
         self.overrideredirect(True)
         
-        self.play_music()
         self.display_top_levels()
+        self.play_music()
     
     def display_top_levels(self):
         total_text = ""
