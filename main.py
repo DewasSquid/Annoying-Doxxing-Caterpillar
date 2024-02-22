@@ -30,7 +30,7 @@ class Video(tk.Toplevel):
             self,
             compound=tk.CENTER,
             foreground="white",
-            font=("Arial", 30)
+            font=("Arial", config.TEXT_SIZE)
         )
         self.video_label.pack(fill=tk.BOTH, expand=True)
         
