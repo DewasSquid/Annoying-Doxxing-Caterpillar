@@ -49,9 +49,7 @@ class Video(tk.Toplevel):
     def animate_text(self, text: str):
         text_length = len(text)
         text_index = 0
-        
-        video_label_font_size = int(self.video_label.cget("font").split(" ")[1])
-        max_display_length = 20*video_label_font_size
+        max_display_length = 20*config.TEXT_SIZE
 
         def _animate():
             nonlocal text_index
