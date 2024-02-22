@@ -1,9 +1,9 @@
 # Title for the main window.
 WINDOW_TITLE = "Doxxing Caterpillar"
 # Path to the video file for playback.
-VIDEO_PATH = "./source/assets/video.mp4"
+VIDEO_PATH = "video.mp4"
 # Path to the audio file for background music.
-MUSIC_PATH = "./source/assets/audio.mp3"
+MUSIC_PATH = "audio.mp3"
 # Volume level for the background music (0.0 to 1.0).
 MUSIC_VOLUME = .1
 # List of system commands to retrieve information for display.
