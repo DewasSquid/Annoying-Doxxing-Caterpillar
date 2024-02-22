@@ -24,12 +24,3 @@ This aims to replicate the infamous "Doxxing Caterpillar" video on your machine.
 
 ## Configuration
 Customize configuration settings in the `config.py` file based on your preferences.
-
-### config.py
-- **WINDOW_TITLE:** Title for the main window.
-- **VIDEO_PATH:** Path to the video file for playback.
-- **MUSIC_PATH:** Path to the audio file for background music.
-- **MUSIC_VOLUME:** Volume level for the background music (0.0 to 1.0).
-- **TEXT_COMMANDS:** List of system commands to retrieve information for display.
-- **TEXT_INTERVAL:** Interval (in milliseconds) for updating the displayed text.
-- **TEXT_STEPS:** Number of characters to increment in each animation step.
