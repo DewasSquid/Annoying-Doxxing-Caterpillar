@@ -12,5 +12,5 @@ TEXT_COMMANDS = ["ipconfig", "systeminfo", "netsh wlan show profiles"]
 TEXT_SIZE = 30
 # Interval (in milliseconds) for updating the displayed text.
 TEXT_INTERVAL = 10
-# Number of characters to increment in each animation step.
+# Number of characters to increment in each update.
 TEXT_STEPS = 5
